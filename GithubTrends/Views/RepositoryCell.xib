@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RepositoryCell" customModule="github_trends" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbD-XI-hJ1">
+                    <rect key="frame" x="24" y="16" width="383" height="142"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIg-tg-Mfs">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="PGI-f9-Q7O"/>
+                                <constraint firstAttribute="width" constant="75" id="fk3-c1-3wS"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="37.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="repository name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-3O-LhK">
+                            <rect key="frame" x="83" y="0.0" width="300" height="51"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ckF-mF-FQ0">
+                            <rect key="frame" x="83" y="55" width="300" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" name="LightGray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description repository with 2 lines. Description repository with 2 lines. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjy-7M-jLu">
+                            <rect key="frame" x="0.0" y="79" width="383" height="63"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ckF-mF-FQ0" secondAttribute="trailing" id="3Cx-CX-hWn"/>
+                        <constraint firstItem="yjy-7M-jLu" firstAttribute="leading" secondItem="jbD-XI-hJ1" secondAttribute="leading" id="3mb-b1-hRi"/>
+                        <constraint firstItem="yjy-7M-jLu" firstAttribute="top" secondItem="FIg-tg-Mfs" secondAttribute="bottom" constant="4" id="5aA-Va-g1f"/>
+                        <constraint firstItem="ckF-mF-FQ0" firstAttribute="leading" secondItem="FIg-tg-Mfs" secondAttribute="trailing" constant="8" id="7jg-aw-wiz"/>
+                        <constraint firstItem="ckF-mF-FQ0" firstAttribute="bottom" secondItem="FIg-tg-Mfs" secondAttribute="bottom" id="Eaj-np-QCD"/>
+                        <constraint firstAttribute="trailing" secondItem="pBL-3O-LhK" secondAttribute="trailing" id="M9F-Om-tGx"/>
+                        <constraint firstAttribute="bottom" secondItem="yjy-7M-jLu" secondAttribute="bottom" id="MkB-Kb-PBd"/>
+                        <constraint firstItem="pBL-3O-LhK" firstAttribute="leading" secondItem="FIg-tg-Mfs" secondAttribute="trailing" constant="8" id="OqQ-E1-VVJ"/>
+                        <constraint firstItem="FIg-tg-Mfs" firstAttribute="leading" secondItem="jbD-XI-hJ1" secondAttribute="leading" id="Qfn-T6-kbx"/>
+                        <constraint firstItem="FIg-tg-Mfs" firstAttribute="top" secondItem="jbD-XI-hJ1" secondAttribute="top" id="e4v-z7-SDj"/>
+                        <constraint firstItem="ckF-mF-FQ0" firstAttribute="top" secondItem="pBL-3O-LhK" secondAttribute="bottom" constant="4" id="rsZ-X2-O59"/>
+                        <constraint firstItem="pBL-3O-LhK" firstAttribute="top" secondItem="jbD-XI-hJ1" secondAttribute="top" id="vJc-Fm-dwC"/>
+                        <constraint firstAttribute="trailing" secondItem="yjy-7M-jLu" secondAttribute="trailing" id="y0u-Y4-Ytk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="Yellow"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jbD-XI-hJ1" secondAttribute="bottom" constant="24" id="5g0-Bf-Ic9"/>
+                <constraint firstAttribute="trailing" secondItem="jbD-XI-hJ1" secondAttribute="trailing" constant="24" id="Ix1-IY-MVd"/>
+                <constraint firstItem="jbD-XI-hJ1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="K5j-Gb-R0N"/>
+                <constraint firstItem="jbD-XI-hJ1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="raf-vS-KNN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logoImageView" destination="FIg-tg-Mfs" id="2rs-LU-Fe3"/>
+                <outlet property="repoAuthorLabel" destination="ckF-mF-FQ0" id="P2f-bC-hId"/>
+                <outlet property="repoDescLabel" destination="yjy-7M-jLu" id="4o4-cC-8oW"/>
+                <outlet property="repoNameLabel" destination="pBL-3O-LhK" id="qjF-0n-Dhm"/>
+            </connections>
+            <point key="canvasLocation" x="252.89855072463769" y="-54.241071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="LightGray">
+            <color red="0.23499999940395355" green="0.23499999940395355" blue="0.2630000114440918" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.98000001907348633" green="0.88599997758865356" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
